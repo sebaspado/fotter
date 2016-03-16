@@ -5,173 +5,170 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" media="all" href="css/resets.css" />
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-
+<meta name="description" content="Simula tu credito online y compara precios" />
+<meta name="author" content="Compara online">
+<meta name="robots" content="INDEX,FOLLOW" />
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <![endif]-->
-
-<title>Simula tu credito automotriz</title>
+<title>Compara Online</title>
 </head>
 
 <body>
-
 <div class="seccion" role="main">
 <div class="container">
-
-<ol class="breadcrumb">
+  <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
     <li class="current"><a href="#">Credito automotriz</a></li>
-</ol>
-
-	<div class="simulador-cont">
-    	<div class="simulador-header"><h1>Simula tu Crédito Automotriz</h1></div>
-        <form>
-        	<div class="form-group">
-              <label class="control-label" for="regreso">Valor del auto<label>
-              <input data-role="date" type="text" id="regreso" class="sm-form-control required js-input" aria-required="true">    
-              <span>$10.000</span>        
-            </div>
-            
-            <div class="form-group">
-              <label class="control-label" for="regreso">Monto del pie<label>
-              <input data-role="date" type="text" id="regreso" class="sm-form-control required js-input" aria-required="true">  
-              <span>$2.000</span>           
-            </div>
-            
-            <div class="form-group">
-              <label class="control-label" for="regreso">Plazo del crédito<label>
-              <select><option></option><option></option><option></option><option></option></select>           
-            </div>
-            
-            
-            <div class="form-group">
-              <label class="control-label" for="regreso">Marca del auto<label>
-              <input data-role="date" type="text" id="regreso" class="sm-form-control required js-input" aria-required="true">            
-            </div>
-            
-            <div class="form-group">
-              <label class="control-label" for="regreso">Año auto<label>
-              <input data-role="date" type="text" id="regreso" class="sm-form-control required js-input" aria-required="true">            
-            </div>
-            
-            <div class="form-group">
-              <label class="control-label" for="regreso">¿Cuando planeas comprar el vehiculo?<label>
-              <input data-role="date" type="text" id="regreso" class="sm-form-control required js-input" aria-required="true">            
-            </div>
-            
-            
-            <div class="simulador-foot">
-           <span class="resultados">¡Resultados</span> <span class="instantaneos">Instantaneos!</span> 
-           <input class="button" type="submit" value="Simular">
-            </div>
-        </form>
-        
-        
+  </ol>
+  <div class="simulador-cont">
+    <div class="simulador-header">
+      <h1>Simula tu Crédito Automotriz</h1>
     </div>
-    
-    <div class="col-315 pull-right">
-    	<div class="ayuda">Ayuda?<span>750 1414</span></div>
-        <div class="horarios"><span>Lu. a Vie. 09:00 a 21:00hrs</span><span>Sab. 10:00 a 15:00hrs</span></div>
-        <div class="auto"><img src="img/auto.png" width="311" height="260" alt="Auto verde del simulador"/></div>
-    
+    <form method="post" id="">
+      <div class="form-group">
+      <label class="control-label" for="valorAuto">
+      Valor del auto
+      <label>
+      <input type="text" id="valorAuto" placeholder="$" class="sm-form-control required js-input valorAuto" aria-required="true">
+      <span>$10.000</span>
+      </div>
+      <div class="form-group">
+      <label class="control-label" for="montoPie">
+      Monto del pie
+      <label>
+      <input  type="text" id="montoPie" placeholder="$" class="sm-form-control required js-input montoPie" aria-required="true">
+      <span>$2.000</span>
+      </div>
+      <div class="form-group">
+      <label class="control-label" for="plazo">
+      Plazo del crédito
+      <label>
+      <select id="plazo" class="plazo">
+        <option>Seleccionar</option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label class="control-label" for="marca">
+      Marca del auto
+      <label>
+      <select id="marca" class="marca">
+        <option>Seleccionar</option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label class="control-label" for="año">
+      Año auto
+      <label>
+      <select id="año" class="año">
+        <option>Seleccionar</option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label class="control-label" for="planea">
+      ¿Cuando planeas comprar el vehiculo?
+      <label>
+      <select id="planea" class="planea">
+        <option>Seleccionar</option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+      </div>
+      <div class="simulador-foot"> <span class="resultados">¡Resultados</span> <span class="instantaneos">Instantaneos!</span>
+        <input class="button" type="submit" value="Simular">
+      </div>
+    </form>
   </div>
-
-	<ul class="marcas">
+  <div class="col-ayuda">
+    <div class="numeros-horarios"> <i class="icono-phone"></i>
+      <div class="ayuda">Ayuda?<span>750 1414</span></div>
+      <div class="horarios"><span>Lu. a Vie. 09:00 a 21:00hrs</span><span>Sab. 10:00 a 15:00hrs</span></div>
+    </div>
+    <div class="auto"><img src="img/auto.png" width="311" height="260" alt="Auto verde del simulador"/></div>
+  </div>
+  <ul class="marcas">
     <li><img src="img/crediautos-logo.jpg" width="90" height="40" alt="logo credi autos"/></li>
     <li><img src="img/tanner-logo.jpg" width="90" height="40" alt="logo tanner"/></li>
     <li><img src="img/coopeuch-logo.jpg" width="90" height="40" alt="logo coopeuch"/></li>
-    </ul>
-
-</label>
+  </ul>
+  </label>
 </div>
-
-
 <div class="seccion bg-gris">
-<div class="shadow"></div>
-	<div class="container">
-    	
-        <div class="col-315"><h2>Yo coticé mi <br>Seguro automotriz</h2><p>Conoce los testimonios de los usuarios que han comprado su seguro a través de ComparaOnline.</p>
-
-<p>¡Envíanos tu experiencia! <a href="http://www.fotter.com.ar" target="_blank">Aquí.</a></p></div>
-        <div class="col-315">
-        	<div class="burbuja">
-            	<blockquote>
-                See how your site looks across 10 different devices, from Windows to Mac to Android courtesy of
-                </blockquote>
-            </div>
-        </div>
-        <div class="col-315">
-        	<div class="burbuja2">
-            	<blockquote>
-                See how your site looks across 10 different devices, from Windows to Mac to Android courtesy of
-                </blockquote>
-            </div>
-        </div>
-    
+  <div class="shadow"></div>
+  <div class="container">
+    <div class="col-315">
+      <h2>Yo coticé mi <br>
+        Seguro automotriz</h2>
+      <p>Conoce los testimonios de los usuarios que han comprado su seguro a través de ComparaOnline.</p>
+      <p>¡Envíanos tu experiencia! <a href="http://www.fotter.com.ar" target="_blank">Aquí.</a></p>
+    </div>
+    <div class="col-315">
+      <div class="burbuja">
+        <blockquote> See how your site looks across 10 different devices, from Windows to Mac to Android courtesy of </blockquote>
+      </div>
+    </div>
+    <div class="col-315">
+      <div class="burbuja2">
+        <blockquote> See how your site looks across 10 different devices, from Windows to Mac to Android courtesy of </blockquote>
+      </div>
+    </div>
     
     <!-- TABS --->
     <div id="tabs-container">
-    <ul class="tabs-menu">
+      <ul class="tabs-menu">
         <li class="current"><a href="#tab-1">¿POR QUÉ USAR 
-COMPARAONLINE?</a></li>
+          COMPARAONLINE?</a></li>
         <li><a href="#tab-2">ASEGURADORAS</a></li>
         <li><a href="#tab-3">MARCAS DE AUTOS</a></li>
         <li><a href="#tab-4">TIPS Y CONSEJOS</a></li>
-    </ul>
-    <div class="tab">
+      </ul>
+      <div class="tab">
         <div id="tab-1" class="tab-content">
-        
-            	<ul class="big-icons">
-                <li><img src="img/tab-icon1.png" width="152" height="152" alt="compra auto en cuotas icon"/></li>
-                <li><img src="img/tab-icon2.png" width="152" height="152" alt="antiguedad laboral icon"/></li>
-                <li><img src="img/tab-icon3.png" width="152" height="152" alt="buenos antecedentes bancarios icon"/></li>
-                <li><img src="img/tab-icon4.png" width="152" height="152" alt="simulador de credito icon"/></li>
-                </ul>
-            
-        <div class="col-308">
-        <h3>¿Para qué contratar un seguro automotriz? </h3>
-          <p><strong>Nadie está libre de riesgos:</strong> Todos estamos expuestos a sufrir el robo de nuestro auto, de sus accesorios o un accidente. Y lo que es peor, las consecuencias son imposibles de predecir. <trong>La reparación de tu auto</ y el de los otros involucrados en un siniestro, puede resultar de un altísimo costo. Inclusive, pueden terminar personas lesionadas o fallecidas.</p>
-
-<p>El lado positivo de esto es que –por suerte– hay una solución: contratar un seguro automotriz para manejar más tranquilo. Hay distintos tipos de seguro automotriz en base a las coberturas que ofrecen, pero por muy simples que sean responderán mejor que tu propio bolsillo.</p></div>
-          
+          <ul class="big-icons">
+            <li><img src="img/tab-icon1.png" width="152" height="152" alt="compra auto en cuotas icon"/></li>
+            <li><img src="img/tab-icon2.png" width="152" height="152" alt="antiguedad laboral icon"/></li>
+            <li><img src="img/tab-icon3.png" width="152" height="152" alt="buenos antecedentes bancarios icon"/></li>
+            <li><img src="img/tab-icon4.png" width="152" height="152" alt="simulador de credito icon"/></li>
+          </ul>
           <div class="col-308">
-          <h3>¿Para qué contratar un seguro automotriz? </h3>
-          <p><strong>“El mejor seguro automotriz”</strong> como tal no existe. Lo que hace que un producto sea mejor que el otro sólo lo defines tú y tus necesidades: en cuanto a precio y calidad. Cada aseguradora ofrece <strong>seguros para autos</strong> con distintas coberturas, precios y atributos; por lo que comparar todas las opciones es lento y engorroso. En general optamos por un seguro sin antes cotizar uno afín a nuestras necesidades.</p>
-
-<p>Por ello, una forma fácil e inteligente de elegir el mejor seguro para autos es a través de nuestro comparador online de seguro automotriz. Comparas las compañías aseguradoras del mercado y eliges la oferta más conveniente. Tenemos seguros para todas las marcas de auto.</p></div>
-          
-          
+            <h3>¿Para qué contratar un seguro automotriz? </h3>
+            <p><strong>Nadie está libre de riesgos:</strong> Todos estamos expuestos a sufrir el robo de nuestro auto, de sus accesorios o un accidente. Y lo que es peor, las consecuencias son imposibles de predecir.
+              <trong>
+              La reparación de tu auto</ y el de los otros involucrados en un siniestro, puede resultar de un altísimo costo. Inclusive, pueden terminar personas lesionadas o fallecidas.</p>
+            <p>El lado positivo de esto es que –por suerte– hay una solución: contratar un seguro automotriz para manejar más tranquilo. Hay distintos tipos de seguro automotriz en base a las coberturas que ofrecen, pero por muy simples que sean responderán mejor que tu propio bolsillo.</p>
+          </div>
+          <div class="col-308">
+            <h3>¿Para qué contratar un seguro automotriz? </h3>
+            <p><strong>“El mejor seguro automotriz”</strong> como tal no existe. Lo que hace que un producto sea mejor que el otro sólo lo defines tú y tus necesidades: en cuanto a precio y calidad. Cada aseguradora ofrece <strong>seguros para autos</strong> con distintas coberturas, precios y atributos; por lo que comparar todas las opciones es lento y engorroso. En general optamos por un seguro sin antes cotizar uno afín a nuestras necesidades.</p>
+            <p>Por ello, una forma fácil e inteligente de elegir el mejor seguro para autos es a través de nuestro comparador online de seguro automotriz. Comparas las compañías aseguradoras del mercado y eliges la oferta más conveniente. Tenemos seguros para todas las marcas de auto.</p>
+          </div>
         </div>
         <div id="tab-2" class="tab-content">
-            <p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper eget, sagittis sed eros. Proin tortor tellus, pulvinar at imperdiet in, egestas sed nisl. Aenean tempor neque ut felis dignissim ac congue felis viverra. </p>
-        
+          <p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper eget, sagittis sed eros. Proin tortor tellus, pulvinar at imperdiet in, egestas sed nisl. Aenean tempor neque ut felis dignissim ac congue felis viverra. </p>
         </div>
         <div id="tab-3" class="tab-content">
-            <p>Duis egestas fermentum ipsum et commodo. Proin bibendum consectetur elit, hendrerit porta mi dictum eu. Vestibulum adipiscing euismod laoreet. Vivamus lobortis tortor a odio consectetur pulvinar. Proin blandit ornare eros dictum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet, ante aliquet molestie laoreet, lectus odio fringilla purus, id porttitor erat velit vitae mi. Nullam posuere nunc ut justo sollicitudin interdum. Donec suscipit eros nec leo condimentum fermentum. Nunc quis libero massa. Integer tempus laoreet lectus id interdum. Integer facilisis egestas dui at convallis. Praesent elementum nisl et erat iaculis a blandit ligula mollis. Vestibulum vitae risus dui, nec sagittis arcu. Nullam tortor enim, placerat quis eleifend in, viverra ac lacus. Ut aliquam sapien ut metus hendrerit auctor dapibus justo porta. </p>
+          <p>Duis egestas fermentum ipsum et commodo. Proin bibendum consectetur elit, hendrerit porta mi dictum eu. Vestibulum adipiscing euismod laoreet. Vivamus lobortis tortor a odio consectetur pulvinar. Proin blandit ornare eros dictum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet, ante aliquet molestie laoreet, lectus odio fringilla purus, id porttitor erat velit vitae mi. Nullam posuere nunc ut justo sollicitudin interdum. Donec suscipit eros nec leo condimentum fermentum. Nunc quis libero massa. Integer tempus laoreet lectus id interdum. Integer facilisis egestas dui at convallis. Praesent elementum nisl et erat iaculis a blandit ligula mollis. Vestibulum vitae risus dui, nec sagittis arcu. Nullam tortor enim, placerat quis eleifend in, viverra ac lacus. Ut aliquam sapien ut metus hendrerit auctor dapibus justo porta. </p>
         </div>
         <div id="tab-4" class="tab-content">
-            <p>Proin sollicitudin tincidunt quam, in egestas dui tincidunt non. Maecenas tempus condimentum mi, sed convallis tortor iaculis eu. Cras dui dui, tempor quis tempor vitae, ullamcorper in justo. Integer et lorem diam. Quisque consequat lectus eget urna molestie pharetra. Cras risus lectus, lobortis sit amet imperdiet sit amet, eleifend a erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit amet ornare tellus. Pellentesque nec augue a nibh pharetra scelerisque quis sit amet felis. Nullam at enim at lacus pretium iaculis sit amet vel nunc. Praesent sapien felis, tincidunt vitae blandit ut, mattis at diam. Suspendisse ac sapien eget eros venenatis tempor quis id odio. Donec lacus leo, tincidunt eget molestie at, pharetra cursus odio. </p>
+          <p>Proin sollicitudin tincidunt quam, in egestas dui tincidunt non. Maecenas tempus condimentum mi, sed convallis tortor iaculis eu. Cras dui dui, tempor quis tempor vitae, ullamcorper in justo. Integer et lorem diam. Quisque consequat lectus eget urna molestie pharetra. Cras risus lectus, lobortis sit amet imperdiet sit amet, eleifend a erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit amet ornare tellus. Pellentesque nec augue a nibh pharetra scelerisque quis sit amet felis. Nullam at enim at lacus pretium iaculis sit amet vel nunc. Praesent sapien felis, tincidunt vitae blandit ut, mattis at diam. Suspendisse ac sapien eget eros venenatis tempor quis id odio. Donec lacus leo, tincidunt eget molestie at, pharetra cursus odio. </p>
         </div>
+      </div>
     </div>
+    <!-- FIN TABS --> 
+    
+  </div>
 </div>
-<!-- FIN TABS -->
-    
-    
-    
-    
-    </div>
-
-
-</div>
-
-
-
-
-
-
-
 <script type="text/javascript" language="javascript" src="js/min.js"></script> 
-
 <script>
 $(document).ready(function() {
     $(".tabs-menu a").click(function(event) {
@@ -183,6 +180,76 @@ $(document).ready(function() {
         $(tab).fadeIn();
     });
 });
+
+
+$(function() { 
+	var emailreg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;	
+	$(".button").click(function(){  
+		$(".error").fadeOut().remove();
+		
+		
+        if ($(".valorAuto").val() == "") {  
+			$(".valorAuto").focus().after('<span class="error">Ingrese el valor</span>');  
+			return false;  
+		}  
+		
+		  if ($(".montoPie").val() == "") {  
+			$(".montoPie").focus().after('<span class="error">Ingrese el monto</span>');  
+			return false;  
+		}  
+		
+		  if ($(".marca").val() == "") {  
+			$(".marca").focus().after('<span class="error">Ingrese la marca</span>');  
+			return false;  
+		}  
+		
+		
+	if(0 == document.getElementsByTagName('select')[0].selectedIndex){
+alert("Por favor seleccione una opcion, todos los campos son requeridos!")
+return false;
+}
+		
+	 
+});
+
+});
+
+
+
+// Below Function Executes On Form Submit
+function ValidationEvent() {
+// Storing Field Values In Variables
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var contact = document.getElementById("contact").value;
+// Regular Expression For Email
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+// Conditions
+if (name != '' && email != '' && contact != '') {
+if (email.match(emailReg)) {
+if (document.getElementById("male").checked || document.getElementById("female").checked) {
+if (contact.length == 10) {
+alert("All type of validation has done on OnSubmit event.");
+return true;
+} else {
+alert("The Contact No. must be at least 10 digit long!");
+return false;
+}
+} else {
+alert("You must select gender.....!");
+return false;
+}
+} else {
+alert("Invalid Email Address...!!!");
+return false;
+}
+} else {
+alert("All fields are required.....!");
+return false;
+}
+}
+
+
 
 
 </script>
